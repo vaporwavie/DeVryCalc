@@ -23,6 +23,11 @@ export class SyncPage {
     private navParams: NavParams,
   ) {}
 
+  academusConnect() {
+    console.log("Should connect to Academus");
+    // This will trigger the **future** Academus Java Scraping plugin
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad SyncPage');
   }

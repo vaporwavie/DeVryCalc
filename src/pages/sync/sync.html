@@ -14,7 +14,37 @@
 
 
 <ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <h1>Como sincronizar</h1>
+    </ion-card-header>
 
-  <h2>This needs some serious work</h2>
+    <ion-card-content>
+      <p>
+        Para ter suas notas sincronizadas, precisamos de suas credenciais. Isso é necessário porque entramos no Academus e inserimos a situação de suas
+        disciplinas aqui no aplicativo. Não se preocupe, o acesso é estritamente relacionado ao Academus, e não teremos domínio algum de seus dados.
+      </p>
+    </ion-card-content>
 
+  </ion-card>
+  <ion-card>
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Matrícula</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Senha</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <button class="btn-sync" ion-button (click)="academusConnect()">Conectar</button>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-card>
 </ion-content>
