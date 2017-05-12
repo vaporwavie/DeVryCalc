@@ -22,26 +22,6 @@ export class SyncPage {
     private formBuilder: FormBuilder,
     private navParams: NavParams,
   ) {}
-  // 
-  // sync() {
-  //   let alert = this.alertCtrl.create({
-  //     title: 'Sincronizar notas',
-  //     message: 'Essa funcionalidade ainda está sendo testada. O Academus é muito instável, e dependemos dele para sincronizar suas notas.',
-  //     buttons: [
-  //       {
-  //         text: 'Cancelar'
-  //       },
-  //       {
-  //         text: 'Prosseguir mesmo assim',
-  //         handler: () => {
-  //           this.navCtrl.push('SyncPage');
-  //           console.log("Needs some work");
-  //         }
-  //       }
-  //     ]
-  //   });
-  //   alert.present();
-  // }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SyncPage');
