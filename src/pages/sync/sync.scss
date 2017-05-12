@@ -2,14 +2,8 @@ page-sync {
   .content {
     background-color: #f4f4f4;
   }
-}
 
-.item-input-inset .item-input-wrapper input {
-  padding-left: 4px;
-  height: 29px;
-  background: transparent;
-  line-height: 10px;
-  // you should add the following:
-  box-sizing: border-box;
-  width: 20%;
+  .card-entry {
+    width: 90%;
+  }
 }

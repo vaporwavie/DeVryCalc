@@ -30,18 +30,18 @@
   <ion-card>
     <ion-list>
 
-      <ion-item>
+      <ion-item class="card-entry">
+        <ion-label floating>Matrícula</ion-label>
         <ion-input type="number"></ion-input>
-        <ion-label style="width: 30%" floating>Matrícula</ion-label>
       </ion-item>
 
-      <ion-item>
+      <ion-item class="card-entry">
         <ion-label floating>Senha</ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
 
       <ion-item>
-        <button class="btn-sync" ion-button (click)="academusConnect()">Conectar</button>
+        <button class="btn-sync" ion-button full (click)="academusConnect()">Conectar</button>
       </ion-item>
 
     </ion-list>
