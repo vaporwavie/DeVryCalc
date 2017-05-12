@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AlertController, NavController, NavParams, ToastController, IonicPage } from 'ionic-angular';
 
 /**
  * Generated class for the SyncPage page.
@@ -14,7 +15,32 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SyncPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor (
+    private navCtrl: NavController,
+    private alertCtrl: AlertController,
+    private toastCtrl: ToastController,
+    private formBuilder: FormBuilder,
+    private navParams: NavParams,
+  ) {
+    // nothing to see here
+  }
+
+  sync() {
+    let alert = this.alertCtrl.create({
+      title: 'Sincronizar notas',
+      message: 'Essa funcionalidade ainda está sendo testada. O Academus é muito instável, e dependemos dele para sincronizar suas notas.',
+      buttons: [
+        {
+          text: 'Cancelar'
+        },
+        {
+          text: 'Prosseguir mesmo assim',
+          handler: () => {
+            this.navCtrl.pop();
+          }
+        }
+      ]
+    });
   }
 
   ionViewDidLoad() {

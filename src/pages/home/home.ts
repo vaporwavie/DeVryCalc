@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, PopoverController } from 'ionic-angular';
+import { IonicPage, NavController, PopoverController, AlertController } from 'ionic-angular';
 import { DisciplinaModel } from './../../models/disciplina.model';
 import { Notas } from '../../providers/notas';
 import { Disciplinas } from './../../providers/disciplinas';
@@ -16,6 +16,7 @@ export class HomePage {
   constructor(
     public navCtrl: NavController,
     public popoverCtrl: PopoverController,
+    private alertCtrl: AlertController,
     public disciplinasService: Disciplinas,
     public notas: Notas
   ) {}
@@ -42,6 +43,25 @@ export class HomePage {
 
   create() {
     this.navCtrl.push('DisciplinaPage');
+  }
+
+  sync() {
+    let alert = this.alertCtrl.create({
+      title: 'Sincronizar notas',
+      message: 'Essa funcionalidade ainda está sendo testada. O Academus é muito instável, e dependemos dele para sincronizar suas notas.',
+      buttons: [
+        {
+          text: 'Cancelar'
+        },
+        {
+          text: 'Prosseguir mesmo assim',
+          handler: () => {
+            this.navCtrl.pop();
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 
 }
