@@ -19,11 +19,7 @@
 ion-grid.empty {
   text-align: center;
   color: #888;
-  position: fixed;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+  
   &,
   > ion-row {
     height: 100%;
