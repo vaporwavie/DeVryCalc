@@ -36,11 +36,12 @@ export class SyncPage {
         {
           text: 'Prosseguir mesmo assim',
           handler: () => {
-            this.navCtrl.pop();
+            console.log("Needs some work");
           }
         }
       ]
     });
+    alert.present();
   }
 
   ionViewDidLoad() {
