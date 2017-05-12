@@ -56,7 +56,7 @@ export class HomePage {
         {
           text: 'Prosseguir mesmo assim',
           handler: () => {
-            this.navCtrl.pop();
+            console.log("Needs work");
           }
         }
       ]
