@@ -4,6 +4,7 @@
       Calculadora DeVry
     </ion-title>
     <ion-buttons end>
+      <a class="btn-sync" href="#" ion-button>Sincronizar notas</a>
       <button ion-button icon-only (click)="openMenu($event)" type="button"><ion-icon name="more"></ion-icon></button>
     </ion-buttons>
   </ion-navbar>
@@ -18,12 +19,22 @@
       <ion-col>
         <ion-icon name="ios-list-box-outline"></ion-icon>
         <h1>Sem disciplinas cadastradas</h1>
+        <p>Para adicionar uma disciplina, aperte em <ion-icon name="add-circle"></ion-icon></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--<ion-grid class="empty" *ngIf="!disciplinas || !disciplinas.length">
+    <ion-row center>
+      <ion-col>
+        <ion-icon name="ios-list-box-outline"></ion-icon>
+        <h1>Sem disciplinas cadastradas</h1>
         <p>Para adicionar uma disciplina, aperte em
           <ion-icon name="add-circle"></ion-icon>
         </p>
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-grid>-->
 
   <ion-card *ngFor="let disciplina of disciplinas" (click)="edit(disciplina)">
 
