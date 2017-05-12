@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 import { AlertController, NavController, NavParams, ToastController, IonicPage } from 'ionic-angular';
 
 /**
@@ -21,31 +21,29 @@ export class SyncPage {
     private toastCtrl: ToastController,
     private formBuilder: FormBuilder,
     private navParams: NavParams,
-  ) {
-    // nothing to see here
-  }
-
-  sync() {
-    let alert = this.alertCtrl.create({
-      title: 'Sincronizar notas',
-      message: 'Essa funcionalidade ainda está sendo testada. O Academus é muito instável, e dependemos dele para sincronizar suas notas.',
-      buttons: [
-        {
-          text: 'Cancelar'
-        },
-        {
-          text: 'Prosseguir mesmo assim',
-          handler: () => {
-            console.log("Needs some work");
-          }
-        }
-      ]
-    });
-    alert.present();
-  }
+  ) {}
+  // 
+  // sync() {
+  //   let alert = this.alertCtrl.create({
+  //     title: 'Sincronizar notas',
+  //     message: 'Essa funcionalidade ainda está sendo testada. O Academus é muito instável, e dependemos dele para sincronizar suas notas.',
+  //     buttons: [
+  //       {
+  //         text: 'Cancelar'
+  //       },
+  //       {
+  //         text: 'Prosseguir mesmo assim',
+  //         handler: () => {
+  //           this.navCtrl.push('SyncPage');
+  //           console.log("Needs some work");
+  //         }
+  //       }
+  //     ]
+  //   });
+  //   alert.present();
+  // }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SyncPage');
   }
-
 }

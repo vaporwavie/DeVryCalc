@@ -56,6 +56,7 @@ export class HomePage {
         {
           text: 'Prosseguir mesmo assim',
           handler: () => {
+            this.navCtrl.push('SyncPage');
             console.log("Needs work");
           }
         }
