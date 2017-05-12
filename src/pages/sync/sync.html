@@ -21,8 +21,10 @@
 
     <ion-card-content>
       <p>
-        Para ter suas notas sincronizadas, precisamos de suas credenciais. Isso é necessário porque entramos no Academus e inserimos a situação de suas
-        disciplinas aqui no aplicativo. Não se preocupe, o acesso é estritamente relacionado ao Academus, e não teremos domínio algum de seus dados.
+        Para sincronizarmos suas notas, precisaremos de suas credenciais para acessar o Academus. Para entender
+        como o processo é trabalhado, aperte no botão abaixo.
+        <button class="btn-sync" ion-button full (click)="academusConnect()">Como funciona</button>
+        
       </p>
     </ion-card-content>
 
@@ -31,13 +33,18 @@
     <ion-list>
 
       <ion-item class="card-entry">
-        <ion-label floating>Matrícula</ion-label>
-        <ion-input type="number"></ion-input>
+        <ion-label fixed color="dark">Matrícula</ion-label>
+        <ion-input type="number" placeholder="Sua matrícula"></ion-input>
       </ion-item>
 
       <ion-item class="card-entry">
-        <ion-label floating>Senha</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-label fixed color="dark">Senha</ion-label>
+        <ion-input type="password" placeholder="Sua senha"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Lembrar meus dados</ion-label>
+        <ion-checkbox [(ngModel)]="matricula"></ion-checkbox>
       </ion-item>
 
       <ion-item>
