@@ -26,7 +26,7 @@ export class AboutSyncPage {
   ) {}
 
   closeModal() {
-    this.navCtrl.push('SyncPage');
+    this.navCtrl.pop();
   }
   
   ionViewDidLoad() {
