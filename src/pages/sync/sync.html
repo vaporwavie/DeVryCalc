@@ -23,8 +23,7 @@
       <p>
         Para sincronizarmos suas notas, precisaremos de suas credenciais para acessar o Academus. Para entender
         como o processo é trabalhado, aperte no botão abaixo.
-        <button class="btn-sync" ion-button full (click)="academusConnect()">Como funciona</button>
-        
+        <button class="btn-sync" ion-button full (click)="aboutSync()">Como funciona</button>
       </p>
     </ion-card-content>
 
@@ -36,7 +35,7 @@
         <ion-label fixed color="dark">Matrícula</ion-label>
         <ion-input type="number" placeholder="Sua matrícula"></ion-input>
       </ion-item>
-
+      
       <ion-item class="card-entry">
         <ion-label fixed color="dark">Senha</ion-label>
         <ion-input type="password" placeholder="Sua senha"></ion-input>
@@ -44,6 +43,7 @@
 
       <ion-item>
         <ion-label>Lembrar meus dados</ion-label>
+        <!-- TODO tenho que verificar esse ngModel pra guardar a matrícula no localStorage -->
         <ion-checkbox [(ngModel)]="matricula"></ion-checkbox>
       </ion-item>
 

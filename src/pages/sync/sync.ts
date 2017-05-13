@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { AlertController, NavController, NavParams, ToastController, IonicPage } from 'ionic-angular';
+import { AlertController, NavController, NavParams, ToastController, ModalController, IonicPage } from 'ionic-angular';
 
 /**
  * Generated class for the SyncPage page.
@@ -16,6 +16,7 @@ import { AlertController, NavController, NavParams, ToastController, IonicPage }
 export class SyncPage {
 
   constructor (
+    private modalCtrl: ModalController,
     private navCtrl: NavController,
     private alertCtrl: AlertController,
     private toastCtrl: ToastController,
@@ -23,9 +24,13 @@ export class SyncPage {
     private navParams: NavParams,
   ) {}
 
+  aboutSync() {
+    let modal = this.modalCtrl.create('AboutSyncPage');
+    modal.present();
+  }
+
   academusConnect() {
-    console.log("Should connect to Academus");
-    // This will trigger the **future** Academus Java Scraping plugin
+    console.log("Needs work");
   }
 
   ionViewDidLoad() {

@@ -30,6 +30,10 @@ ion-grid.empty {
   }
 }
 
+button::after {
+  color: white;
+}
+
 .form-errors {
     margin-bottom: 0;
     margin-top: 0.5rem;

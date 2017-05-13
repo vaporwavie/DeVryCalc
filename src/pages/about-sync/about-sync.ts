@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FormBuilder } from '@angular/forms';
+import { AlertController, NavController, NavParams, ToastController, ModalController, ViewController, IonicPage } from 'ionic-angular';
 
 /**
  * Generated class for the AboutSyncPage page.
@@ -14,9 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AboutSyncPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
+  constructor (
+    private modalCtrl: ModalController,
+    private viewCtrl: ViewController,
+    private navCtrl: NavController,
+    private alertCtrl: AlertController,
+    private toastCtrl: ToastController,
+    private formBuilder: FormBuilder,
+    private navParams: NavParams,
+  ) {}
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutSyncPage');
   }
