@@ -24,6 +24,10 @@ export class AboutSyncPage {
     private formBuilder: FormBuilder,
     private navParams: NavParams,
   ) {}
+
+  closeModal() {
+    this.navCtrl.push('SyncPage');
+  }
   
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutSyncPage');
