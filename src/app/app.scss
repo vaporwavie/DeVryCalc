@@ -19,7 +19,7 @@
 ion-grid.empty {
   text-align: center;
   color: #888;
-  
+
   &,
   > ion-row {
     height: 100%;
@@ -29,6 +29,7 @@ ion-grid.empty {
     font-size: 7em;
   }
 }
+
 
 button::after {
   color: white;
