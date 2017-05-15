@@ -17,13 +17,13 @@ sincronização das notas do Academus com o app.
 
 ## Status
 
-**Finalizado**:
+:white_check_mark: **Finalizado**:
 * Botão de sincronização
 * Tela de sincronização
 * Modal sobre o funcionamento dessa feature
 * Campos para inserir matrícula e senha
 
-**A fazer**:
+:shipit: **A fazer**:
 * Scraping (conexão entre o app e o Academus)
 * Parsing dos dados das matérias do semestre
 * Atualização da listagem principal do app quando tudo for sincronizado
