@@ -10,6 +10,25 @@
 
 
 <ion-content padding>
-  <p>Apresentação da nova funcionalidade da calculadora.</p>
-  <button ion-button full (click)="closeModal()">Estou pronto!</button>
+  <ion-slides pager class="about-sync">
+
+    <ion-slide>
+      <h2>Slide 1</h2>
+      <p>Description</p>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>Slide 2</h2>
+      <p>Description</p>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>Preparado para sincronizar suas notas?</h2>
+      <button color="light" clear (click)="closeModal()" class="disable-hover button button-md button-clear button-clear-md button-large button-large-md button-clear-md-primary">
+        <span class="button-inner">
+        Estou pronto!
+      </span></button>
+    </ion-slide>
+
+  </ion-slides>
 </ion-content>
