@@ -10,6 +10,28 @@ Calculadora de notas para alunos da DeVry.
 
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png" alt="Disponível no Google Play" height="100">](https://play.google.com/store/apps/details?id=com.rodolfosilva.devrycalc) 
 
+## Branch sync-notas
+
+Essa branch é o estágio beta para uma nova funcionalidade da aplicação, o modo de
+sincronização das notas do Academus com o app.
+
+## Status
+
+**Finalizado**:
+* Botão de sincronização
+* Tela de sincronização
+* Modal sobre o funcionamento dessa feature
+* Campos para inserir matrícula e senha
+
+**A fazer**:
+* Scraping (conexão entre o app e o Academus)
+* Parsing dos dados das matérias do semestre
+* Atualização da listagem principal do app quando tudo for sincronizado
+* LocalStorage pra armazenar as credenciais, caso o usuário queira
+  * Vale lembrar que não temos acesso a estes dados. Eles serão armazenados 
+  no dispositivo do usuário, onde somente o próprio terá acesso.
+
+
 # Configurando o Ambiente
 
 * Clone este repositório
@@ -36,4 +58,3 @@ Para compilar a aplicação, é necessário definir qual plataforma será  direc
 ### Gerando o .apk 
 * Execute: <code>ionic run android --device</code>
 Você encontrará o apk em: <pre>platforms/android/build/output/*.apk</pre>
-
