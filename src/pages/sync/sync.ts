@@ -2,6 +2,13 @@ import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { AlertController, NavController, NavParams, ToastController, ModalController, IonicPage } from 'ionic-angular';
 
+import { express } from 'express';
+import { fs } from 'fs';
+import { request } from 'request';
+import { cheerio } from 'cheerio';
+
+const scrap = express();
+
 /**
  * Generated class for the SyncPage page.
  *
@@ -30,7 +37,12 @@ export class SyncPage {
   }
 
   academusConnect() {
-    console.log("Needs work");
+    console.log("testing")
+  }
+  // this.navCtrl.push('ConnectPage');
+
+  academus() {
+    console.log("");
   }
 
   ionViewDidLoad() {

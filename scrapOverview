@@ -1,0 +1,37 @@
+Scrap DeVryCalc
+
+Passos:
+
+A tela inicial do Academus é bem simples: um formulário de matrícula e senha, e um botão de entrar.
+
+Ao inserir os dados pedidos pelo formulário, ele envia uma requisição também básica em C#. Esses são os dados postados:
+
+<code>
+__EVENTTARGET:
+__EVENTARGUMENT:
+__VIEWSTATE:/wEPDwUJOTQ1NjA3MzExD2QWAgIDD2QWBAIFD2QWAmYPZBYCAgEPZBYCAgcPFgIeB1Zpc2libGVoZAIHD2QWAmYPZBYCZg9kFgICAQ8QZGQWAGRkLjlgslVBgXpHnU9zwTA2lasaFTc=
+__VIEWSTATEGENERATOR:C2EE9ABB
+__PREVIOUSPAGE:qJxhiBp49Tdqd_L_jqiB31ay61CwuLXEGN66h8DRZ3GuCtwrKDQT9Zioyyd2M_j3WAoBzTCE3yaXmTgxWFZ2J5iCBqE1
+hdTipoLogin:1
+txtLogin:NUM-MATR
+txtPWD:SENHA
+btLogar:Entrar
+</code>
+
+Feito isso, é só substituir no array o txtLogin e o txtPWD pelos dados do estudante.
+
+Após logado na visão geral do Academus, o foco do scrap são as notas do aluno, que estão acessiveis no acompanhamentoaluno.devrybrasil.com.br;
+
+A forma que a sessão trata é um redirect. Eu só vou descobrir isso na hora, mas suponho que dê pra passar pra próxima página sem problemas de permissão.
+
+Chegando lá, ótimo. Agora, resta identificar onde estão as notas e realizar o parsing delas pro app. O site do acompanhamento do aluno possui um widget listando as notas (a tabela aumenta conforme as AP's acontecem). 
+
+O que preciso é: Nome da matrícula e a nota (até o momento, AP1). Pra detectar o nome da matrícula, deve-se pegar o xpath daquele campo, que no caso é //*[@id="page-wrapper"]/div[2]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[2]/td[3]/a. O path é o mesmo para toda a ordenação. Ótimo. O valor das notas é atualizado com base no calendário, e isso deve ser pensado no scraping também. O xpath pra AP1 é //*[@id="page-wrapper"]/div[2]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[1]/td[4]/text(). Acho que declarando isso como uma variável e logo depois iterando deve "prever" a atualização das notas.
+
+O último passo é trazer as informações e alocar elas na página principal da calc. Isso promete ser tranquilo, visto que @RodolfoSilva fez uma estrutura bem bacana pra ordenar os cards. **Looks nice**.
+
+Pensamentos:
+
+Criar um botão pra sincronizar diretamente usando as credenciais do usuário (se ele armazenar, melhor ainda)
+
+Notificar quando há notas disponíveis
