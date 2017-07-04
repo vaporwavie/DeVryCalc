@@ -29,7 +29,7 @@ sincronização das notas do Academus com o app.
 * Atualização da listagem principal do app quando tudo for sincronizado
 * LocalStorage pra armazenar as credenciais, caso o usuário queira
   * Vale lembrar que não temos acesso a estes dados. Eles serão armazenados 
-  no dispositivo do usuário, onde somente o próprio terá acesso.
+    no dispositivo do usuário, onde somente o próprio terá acesso.
 
 
 # Configurando o Ambiente
@@ -48,13 +48,13 @@ sincronização das notas do Academus com o app.
 Para compilar a aplicação, é necessário definir qual plataforma será  direcionada. Temos duas opções: Android e iOS. Os dois possuem comandos semelhantes.
 
 ### Adicionando a plataforma
-* Para Android: <code>ionic platform add android</code>
-* Para iOS <code>ionic platform add ios</code>
+* Para Android: <code>ionic cordova platform add android</code>
+* Para iOS <code>ionic cordova platform add ios</code>
 
 ### Compilando a build
-* Para Android: <code>ionic build android --release</code>
-* Para iOS: <code>ionic build ios --release</code>
+* Para Android: <code>ionic cordova build android --release</code>
+* Para iOS: <code>ionic cordova build ios --release</code>
 
 ### Gerando o .apk 
-* Execute: <code>ionic run android --device</code>
-Você encontrará o apk em: <pre>platforms/android/build/output/*.apk</pre>
+* Execute: <code>ionic cordova run android --device</code>
+  Você encontrará o apk em: <pre>platforms/android/build/output/*.apk</pre>
