@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ColorForNotes } from '../../enums/colors-for-notes';
 
 @Component({
   selector: 'nota',
@@ -15,10 +16,6 @@ export class Nota {
   color: string;
 
   ngOnInit() {
-    this.color = '#32db64';
-
-    if (this.nota < this.media) {
-      this.color = '#f53d3d';
-    }
+    this.color = this.nota >= this.media ? ColorForNotes.HIGH : ColorForNotes.LOW;
   }
 }
