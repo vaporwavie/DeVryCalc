@@ -6,11 +6,11 @@ Existirá outro fork referente à nova versão em breve.
 
 # DeVry Calc
 
-[![GitHub issues](https://img.shields.io/github/issues/RodolfoSilva/DeVryCalc.svg)](https://github.com/RodolfoSilva/DeVryCalc/issues)
-[![GitHub stars](https://img.shields.io/github/stars/RodolfoSilva/DeVryCalc.svg)](https://github.com/RodolfoSilva/DeVryCalc/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/RodolfoSilva/DeVryCalc.svg)](https://github.com/RodolfoSilva/DeVryCalc/network)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/RodolfoSilva/DeVryCalc/master/LICENSE)
-[![Build Status](https://travis-ci.org/RodolfoSilva/DeVryCalc.svg?branch=master)](https://travis-ci.org/RodolfoSilva/DeVryCalc)
+[![GitHub issues](https://img.shields.io/github/issues/vaporwavie/DeVryCalc.svg)](https://github.com/vaporwavie/DeVryCalc/issues)
+[![GitHub stars](https://img.shields.io/github/stars/RodolfoSilva/DeVryCalc.svg)](https://github.com/vaporwavie/DeVryCalc/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/RodolfoSilva/DeVryCalc.svg)](https://github.com/vaporwavie/DeVryCalc/network)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vaporwavie/DeVryCalc/master/LICENSE)
+[![Build Status](https://travis-ci.org/vaporwavie/DeVryCalc.svg?branch=master)](https://travis-ci.org/vaporwavie/DeVryCalc)
 
 Calculadora de notas para alunos da DeVry.
 
