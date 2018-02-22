@@ -1,3 +1,9 @@
+# Aviso
+
+Esse repositório não segue as atualizações mais recentes do DeVryCalc, hoje feito em React Native. Caso queira utilizar o app em Ionic, realize o fork **deste** repositório. Caso queira a versão mais recente, veja em https://github.com/RodolfoSilva/DeVryCalc :)
+
+Existirá outro fork referente à nova versão em breve.
+
 # DeVry Calc
 
 [![GitHub issues](https://img.shields.io/github/issues/RodolfoSilva/DeVryCalc.svg)](https://github.com/RodolfoSilva/DeVryCalc/issues)
